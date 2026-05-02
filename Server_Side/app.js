@@ -1,5 +1,7 @@
-import express from "express";
 import dotenv from "dotenv";
+dotenv.config();
+
+import express from "express";
 import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -13,8 +15,6 @@ import donorRoutes from "./routes/donorRoute.js";
 import requestRoutes from "./routes/requestRoute.js";
 import eventRoutes from "./routes/eventRoute.js";
 import contactRoutes from "./routes/contactRoute.js";
-
-dotenv.config({ quiet: true });
 
 const app = express();
 
