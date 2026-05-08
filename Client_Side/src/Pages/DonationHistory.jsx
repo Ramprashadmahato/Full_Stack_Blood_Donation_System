@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import { FaSearch } from "react-icons/fa";
 import { AuthContext } from "../context/AuthContext";
 import { getAllDonors } from "../services/donorService";

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import { FaSearch } from "react-icons/fa";
 import { getDonors } from "../services/donorService";
 import { AuthContext } from "../context/AuthContext"; // assumes you have AuthContext for token

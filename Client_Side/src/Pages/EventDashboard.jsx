@@ -2,8 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import { getEvents, addEvent, updateEvent, deleteEvent } from "../services/eventService";
 import { AuthContext } from "../context/AuthContext";
 import Alert from "../Components/Alert";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import { FaPlus, FaEdit, FaTrash } from "react-icons/fa";
 
 export default function EventDashboard() {

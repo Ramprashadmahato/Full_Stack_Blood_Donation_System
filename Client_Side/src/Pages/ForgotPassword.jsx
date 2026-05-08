@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Button from "../components/Button";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import Button from "../Components/Button";
 import DoctorImage from "../Images/Blood.png"; // doctor / blood illustration
 
 export default function ForgotPassword() {

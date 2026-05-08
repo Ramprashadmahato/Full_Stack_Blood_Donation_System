@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Button from "../components/Button";
-import FormInput from "../components/FormInput";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import Button from "../Components/Button";
+import FormInput from "../Components/FormInput";
 import { AuthContext } from "../context/AuthContext";
 import { addEvent } from "../services/eventService";
 

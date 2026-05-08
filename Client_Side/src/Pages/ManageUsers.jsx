@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import { FaSearch, FaTrash, FaUserEdit, FaTimes } from "react-icons/fa";
 import { getAllUsers, deleteUser, updateUser } from "../services/userService";
 

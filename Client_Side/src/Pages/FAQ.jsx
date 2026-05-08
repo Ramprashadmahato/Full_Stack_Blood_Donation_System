@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function FAQ() {

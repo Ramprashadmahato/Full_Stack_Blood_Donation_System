@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import HeroSection from "../components/HeroSection";
-import Button from "../components/Button";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import HeroSection from "../Components/HeroSection";
+import Button from "../Components/Button";
 import { Link } from "react-router-dom";
 
 // Example feature images

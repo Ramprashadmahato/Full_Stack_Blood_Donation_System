@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Button from "../components/Button";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import Button from "../Components/Button";
 import { FaUser, FaPhone, FaEnvelope, FaMapMarkerAlt, FaTint } from "react-icons/fa";
 import ReciveImage from "../Images/Recive.png";
 import { addBloodRequest } from "../services/requestService";

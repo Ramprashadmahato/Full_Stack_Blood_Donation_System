@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Button from "../components/Button"; // Import Button
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import Button from "../Components/Button"; // Import Button
 import { FaHeartbeat, FaHandsHelping, FaUsers } from "react-icons/fa";
 import HeroImage from "../Images/Detail.png"; // Add a relevant hero image
 

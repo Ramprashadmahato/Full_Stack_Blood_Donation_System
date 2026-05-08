@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Button from "../components/Button";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import Button from "../Components/Button";
 import DoctorImage from "../Images/Blood.png";
 import { AuthContext } from "../context/AuthContext";
 
