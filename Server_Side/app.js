@@ -18,29 +18,32 @@ import contactRoutes from "./routes/contactRoute.js";
 
 const app = express();
 
-// ✅ Fix __dirname in ES modules
+// Fix __dirname in ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// ✅ Enable CORS so frontend (5173) can talk to backend (5000)
+// CORS
 app.use(
   cors({
-    origin: "http://localhost:5173", // frontend URL
+    origin: [
+      "http://localhost:5173",
+      "https://full-stack-blood-donation-system-h6.vercel.app",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
 
-// Middleware to parse JSON
+// Middleware
 app.use(express.json());
 
-// Connect to database
+// Connect DB
 connectDB();
 
-// ✅ Serve uploads folder as static
+// Static uploads
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-// API routes
+// Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/donors", donorRoutes);
@@ -48,12 +51,12 @@ app.use("/api/requests", requestRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/contact", contactRoutes);
 
-// Root endpoint
+// Root
 app.get("/", (req, res) => res.send("API is running 🚀"));
 
-// Error handler (keep after routes)
+// Error middleware
 app.use(errorHandler);
 
-// Start server
+// Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
